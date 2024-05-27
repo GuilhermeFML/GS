@@ -24,13 +24,13 @@ document.getElementById('cadastroForm').addEventListener('submit', function (e) 
     localStorage.setItem('viagens', JSON.stringify(viagens));
 
     document.getElementById('cadastroForm').reset();
-    carregarViagens(viagem.id); // Passa o ID da nova viagem para destacar
-    gerarRelatorio(); // Atualiza o relatório
+    carregarViagens(viagem.id);
+    gerarRelatorio(); 
 });
 
 document.getElementById('search').addEventListener('input', function () {
     const searchTerm = this.value.toLowerCase();
-    carregarViagens(null, searchTerm); // Passa o termo de busca
+    carregarViagens(null, searchTerm); 
 });
 
 function carregarViagens(novaViagemId = null, searchTerm = '') {
@@ -74,7 +74,7 @@ function removerViagem(id, button) {
     li.classList.add('remove');
     li.addEventListener('animationend', () => {
         li.parentElement.remove();
-        gerarRelatorio(); // Atualiza o relatório
+        gerarRelatorio(); 
     });
 }
 
@@ -95,6 +95,6 @@ function formatarDataBrasileira(data) {
     return `${dia}/${mes}/${ano}`;
 }
 
-// Inicializa a página carregando viagens e gerando o relatório
+
 carregarViagens();
 gerarRelatorio();
