@@ -1,0 +1,126 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-color: #f0f0f0;
+    background-repeat: no-repeat;
+    background-image: url('https://images.unsplash.com/photo-1457195740896-7f345efef228?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+}
+
+header {
+   
+    color: #0073e6;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    padding: 2em;
+}
+
+section {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 1em;
+    width: 30%;
+}
+
+h2 {
+    color: #0073e6;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label, input, textarea, button {
+    margin-bottom: 1em;
+}
+
+input, textarea {
+    padding: 0.5em;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #429cb5;
+    color: white;
+    border: none;
+    padding: 1em;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #005bb5;
+}
+
+#viagensList {
+    list-style: none;
+    padding: 0;
+}
+
+#viagensList li {
+    background-color: #f9f9f9;
+    margin-bottom: 0.5em;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#relatorioDados {
+    margin-top: 1em;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    to {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.pop-up {
+    animation: slideIn 0.5s forwards;
+}
+
+.remove {
+    animation: slideOut 0.5s forwards;
+}
+.viagem-container {
+    overflow: hidden;
+}
